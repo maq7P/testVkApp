@@ -10,6 +10,8 @@ import {
   SimpleCell,
 } from "@vkontakte/vkui";
 
+import styles from "./App.module.sass";
+
 function App() {
   return (
     <AppRoot>
@@ -17,7 +19,7 @@ function App() {
         <SplitCol autoSpaced>
           <View activePanel="main">
             <Panel id="main">
-              <PanelHeader>VKUI</PanelHeader>
+              <PanelHeader className={styles.title}> VKUI </PanelHeader>
               <Group header={<Header mode="secondary">Items</Header>}>
                 <SimpleCell>Hello</SimpleCell>
                 <SimpleCell>World</SimpleCell>

@@ -7,8 +7,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import App from "./App.tsx";
 
-import "./index.css";
-
 // INIT VK Mini App
 bridge.send("VKWebAppInit");
 
