@@ -12,16 +12,6 @@ import {
 
 import styles from "./App.module.sass";
 
-const message = {
-  id: 1,
-  text: "JS",
-};
-
-type MessageType = typeof message;
-type MessageKeys = keyof MessageType;
-type MessageValues = MessageType[MessageKeys];
-
-
 function App() {
   return (
     <AppRoot>
