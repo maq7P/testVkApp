@@ -5,6 +5,8 @@ import bridge from "@vkontakte/vk-bridge";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
+import "../styles/index.sass";
+
 import App from "./App.tsx";
 
 // INIT VK Mini App
