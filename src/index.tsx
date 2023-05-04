@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import { Main } from "./pages";
 
+import "@vkontakte/vkui/dist/vkui.css";
 import "../styles/index.sass";
 
 // INIT VK Mini App

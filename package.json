@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^4.29.5",
-    "@vkontakte/icons": "^2.23.0",
+    "@vkontakte/icons": "^2.32.0",
     "@vkontakte/vk-bridge": "^2.7.2",
     "@vkontakte/vkui": "https://pkg.csb.dev/VKCOM/VKUI/commit/09967359/@vkontakte/vkui",
     "classnames": "^2.3.2",

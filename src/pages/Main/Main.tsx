@@ -9,32 +9,19 @@ import {
   Group,
 } from "@vkontakte/vkui";
 
-import { Typography } from "@ui";
+import { Typography, Button } from "../../ui";
 
 import styles from "./Main.module.sass";
 
 function App() {
   return (
     <AppRoot>
-      <SplitLayout header={<PanelHeader separator={false} />}>
-        <SplitCol autoSpaced>
-          <View activePanel="second">
-            <Panel id="main">
-              <PanelHeader className={styles.title}> main </PanelHeader>
-              <Group header={<Header mode="secondary">Items</Header>}>
-                <Typography>main</Typography>
-              </Group>
-            </Panel>
-            <Panel id="second">
-              <PanelHeader className={styles.title}> second </PanelHeader>
+      <Typography>ГЛАВНОЕ СОБЫТИЕ МЕСЯЦА</Typography>
 
-              <Group header={<Header mode="secondary">Items</Header>}>
-                <Typography>second</Typography>
-              </Group>
-            </Panel>
-          </View>
-        </SplitCol>
-      </SplitLayout>
+      <div className={styles.btnWrapper}>
+        <Button view="fill" value="Зарегистрироваться" />
+        <Button view="outline" value="Регистрация на Съемки шоу Вписка" />
+      </div>
     </AppRoot>
   );
 }

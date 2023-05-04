@@ -1,1 +1,2 @@
-export { Typography } from "./Typogrphy";
+export { default as Typography } from "./Typography";
+export { default as Button } from "./Button";
