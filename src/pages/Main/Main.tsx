@@ -1,15 +1,6 @@
-import {
-  AppRoot,
-  SplitLayout,
-  SplitCol,
-  View,
-  Panel,
-  PanelHeader,
-  Header,
-  Group,
-} from "@vkontakte/vkui";
+import { AppRoot } from "@vkontakte/vkui";
 
-import { Typography, Button } from "../../ui";
+import { Typography, Button } from "@/ui";
 
 import styles from "./Main.module.sass";
 
