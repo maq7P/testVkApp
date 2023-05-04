@@ -12,6 +12,12 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "paths": {
+      "@ui": ["./src/ui"],
+      "@services": ["./src/services"],
+      "@modules": ["./src/modules"],
+      "@assets/*": ["./src/assets/*"]
+    },
 
     /* Linting */
     "strict": true,

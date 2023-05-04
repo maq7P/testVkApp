@@ -9,7 +9,7 @@ import {
   Group,
 } from "@vkontakte/vkui";
 
-import { Typography } from "../../ui";
+import { Typography } from "@ui";
 
 import styles from "./Main.module.sass";
 
