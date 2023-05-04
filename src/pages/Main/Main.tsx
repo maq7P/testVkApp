@@ -7,12 +7,11 @@ import {
   PanelHeader,
   Header,
   Group,
-  SimpleCell,
 } from "@vkontakte/vkui";
 
-import { Typography } from "./ui";
+import { Typography } from "../../ui";
 
-import styles from "./App.module.sass";
+import styles from "./Main.module.sass";
 
 function App() {
   return (

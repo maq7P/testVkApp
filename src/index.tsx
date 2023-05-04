@@ -5,9 +5,9 @@ import bridge from "@vkontakte/vk-bridge";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-import "../styles/index.sass";
+import { Main } from "./pages";
 
-import App from "./App.tsx";
+import "../styles/index.sass";
 
 // INIT VK Mini App
 bridge.send("VKWebAppInit");
@@ -19,7 +19,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <ConfigProvider>
     <AdaptivityProvider>
       <QueryClientProvider client={queryClient}>
-        <App />
+        <Main />
       </QueryClientProvider>
     </AdaptivityProvider>
   </ConfigProvider>
