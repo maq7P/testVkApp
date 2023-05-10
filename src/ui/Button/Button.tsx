@@ -7,18 +7,12 @@ import { IButtonProps } from "./types";
 
 import styles from "./Button.module.sass";
 
-const Button: FC<IButtonProps> = ({
-  onClick,
-  loading,
-  value,
-  className,
-  view,
-}) => {
+const Button: FC<IButtonProps> = ({ loading, className, onClick, value, view }) => {
   return (
-    <div className={styles.wrapper} onClick={onClick}>
+    <div className={cn(styles.wrapper, className)} onClick={onClick}>
       <VkButton
         stretched
-        className={cn(styles.btn, styles[`btn--${view}`], className)}
+        className={cn(styles.btn, styles[`btn--${view}`])}
         loading={loading}
         size="l"
       >

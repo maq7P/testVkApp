@@ -7,15 +7,9 @@ import { ITypography } from "./types";
 
 import styles from "./Typography.module.sass";
 
-const Typography: FC<ITypography> = ({
-  children,
-  className,
-  level = "1",
-  variant,
-  ...rest
-}) => (
+const Typography: FC<ITypography> = ({ children, className, level = "1", variant, ...rest }) => (
   <div>
-    <Title level={level} className={cn(styles.title, className)} {...rest}>
+    <Title className={cn(styles.title, className)} level={level} {...rest}>
       {children}
     </Title>
   </div>

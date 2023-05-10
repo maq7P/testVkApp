@@ -1,8 +1,37 @@
 @import styles/fonts
+@import styles/colors
 
-.title
+.wrapper
+  background: url("/images/bg.jpg") no-repeat center / 100% 100%
+
+.title, .subtitle
   font-family: $fnt_family_primary_semi
 
-.btnWrapper
+.titleWrapper
+  position: absolute
+  right: 46px
+  bottom: 120px
+  max-width: 256px
+
+  .title
+    margin-top: 12px
+    font-size: 40px
+    line-height: 49px
+
+  .subtitle
+    font-size: 24px
+    line-height: 30px
+    color: $clr_primary
+
+.bottom
+  position: absolute
+  bottom: 16px
   display: flex
   width: 100%
+  padding: 0 32px
+  gap: 12px
+
+  .btn
+    flex-basis: 50%
+
+// @media (min-width: 768px)
